@@ -93,22 +93,6 @@ class polygon {
 		}
 	}
 	
-	/*
-	//move a vertex slightly
-	void moveVertex(int seed) {
-		randEngine.seed(seed);
-		unsigned int r;
-		r = randEngine();
-		r = r % vertexCount;
-		for (int i = 0; i < vertexCount; i++) {
-			if (r == i) {
-				unsigned int n = randEngine();
-				n = n % 4;
-				if (n < 1)
-					polyArr[i].
-	*/
-	
-	
 	//getters
 	//returns color of polygon
 	Scalar get_color() {return color;}
