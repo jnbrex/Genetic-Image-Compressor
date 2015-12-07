@@ -1,4 +1,4 @@
-Compiles using g++ on linux and usesthe openCV library.
+Compiles using g++ on linux and uses the openCV library.
 
 To compile: g++ -std=c++11 `pkg-config --cflags opencv` -o GA main.cpp draw.cpp pkg-config --libs opencv`
 
