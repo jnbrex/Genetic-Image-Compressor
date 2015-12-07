@@ -17,7 +17,7 @@ class member {
 	
 	//get the score
 	double get_score() const {return score;}
-	//get the ith polygon
+	//get the i-th polygon
 	polygon& get_polygon(int i) {return Polygons[i];}
 	
 	//swap two polygons
