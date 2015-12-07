@@ -15,12 +15,12 @@ Mat renderPolyImage(int imHeight, int imWidth, int numPolygons,
 			tempClone,
 		 	thisPoly, 
 		 	thisVertexCount, 
-		 	1, // One contour
+		 	1, //One contour
 		 	cols[i] //The color for that polygon
 		 	);
 		double alpha = cols[i].val[3]; //3 is the alpha index
 
-		// Add tempClone to polyIm with transparency alpha, store result in polyIm
+		//Add tempClone to polyIm with transparency alpha, store result in polyIm
 		addWeighted(tempClone, alpha, polyIm, 1-alpha, 0, polyIm);
 	}
 
