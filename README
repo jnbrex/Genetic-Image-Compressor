@@ -1,3 +1,7 @@
+This program accepts an input image and creates a close approximation of the image using only 100 polygons using a genetic algorithm.
+The mutations used are: Change the color of a polygon, replace a polygon with a random polygon, remove a vertex from a polygon, add
+a vertex to a polygon, and swap the order of two polygons.
+
 Compiles using g++ on linux and uses the openCV library.
 
 To compile: g++ -std=c++11 `pkg-config --cflags opencv` -o GA main.cpp draw.cpp pkg-config --libs opencv`
@@ -7,4 +11,5 @@ To run: ./GA imagename.jpg N K E
 imagename.jpg is the input image name, and N, K, and E are the population size, number of children, and search effort values respectively.
 
 Running this program will output the highest fitness value after every 1000 children, but by uncommenting the commented out code
-near the bottom of main.cpp, the program can also output the images corresponding to each fitness value.
+near the bottom of main.cpp, the program can also output the images corresponding to each fitness value.  Warning: This will output a
+large number of image files to the directory where the executable is located.
